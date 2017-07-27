@@ -93,12 +93,6 @@ if (ASTRA_DOCS)
   add_subdirectory(docs)
 endif()
 
-if(ASTRA_ANDROID)
-  find_host_package(CLISP REQUIRED)
-else()
-  find_package(CLISP REQUIRED)
-endif()
-
 #Override FindAstra equivalents
 set(ASTRA_SDK_BUILD TRUE)
 set(ASTRA_LIBRARIES
